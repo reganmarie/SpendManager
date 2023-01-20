@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a  href="{% url 'logout' %}">Logout</a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1>Create Category</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button>Create</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
