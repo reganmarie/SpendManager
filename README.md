@@ -8,7 +8,7 @@ SpendManager is an expense tracking application designed to help users track the
 
 - User authentication: SpendManager provides a secure login system that allows users to sign up and log in using their email and password.
 
-- Bank Account Management: Users can add new bank accounts to the application and connect them to their online banking accounts to automatically import their transaction data.
+- Bank Account Management: Users can add new bank accounts to the application.
 
 - Expense Category Management: Users can create and manage expense categories that reflect their spending habits and help them stay organized.
 
