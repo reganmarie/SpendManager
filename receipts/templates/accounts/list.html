@@ -1,28 +1,30 @@
 {% extends 'base.html' %}
 {% block title %}
-    My Categories
+    My Accounts
 {% endblock title %}
 
 {% block content %}
         <main>
-            <h1>My Categories</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Number</th>
-                        <th>Number of Receipts</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for account in accounts.all %}
-                    <tr>
-                        <td>{{ account.name }}</td>
-                        <td>{{ account.number }}</td>
-                        <td>{{ account.receipts.all|length }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+            <div class="accounts-list"></div>
+                <h1>My Categories</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number</th>
+                            <th>Number of Receipts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for account in accounts.all %}
+                        <tr>
+                            <td>{{ account.name }}</td>
+                            <td>{{ account.number }}</td>
+                            <td>{{ account.receipts.all|length }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </main>
 {% endblock content %}
