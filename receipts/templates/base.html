@@ -13,17 +13,18 @@
     <body>
         <header>
             <nav>
-                <div>SpendManager</div>
+                <p><h3>SpendManager</h3></p>
                 <ul>
-                    {% if user.is_authenicated %}
-                    <li><a href="{% url 'create_receipt' %}">Creeate Reciept</a></li>
-                    <li><a href="{% url 'category_list' %}">Category List</a></li>
-                    <li><a href="{% url 'create_category' %}">Create Category</a></li>
-                    <li><a href="{% url 'create_account' %}">Create Account</a></li>
-                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'create_receipt' %}">Create Reciept</a></li>
+                        <li><a href="{% url 'receipt_list' %}">Reciept List</a></li>
+                        <li><a href="{% url 'category_list' %}">Category List</a></li>
+                        <li><a href="{% url 'create_category' %}">Create Category</a></li>
+                        <li><a href="{% url 'create_account' %}">Create Account</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
-                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
-                    <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
                     {% endif %}
                 </ul>
             </nav>
