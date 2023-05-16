@@ -30,6 +30,10 @@ SpendManager is an expense tracking application designed to help users track the
 
 SpendManager is a powerful, user-friendly expense tracking application built using Django. With its key features such as bank account management, expense category management, receipt management, and reporting and analysis, the application helps users stay organized and make informed decisions about their finances.
 
+## Video Walkthrough of Application
+
+[SpendManager Video Walkthrough](https://youtu.be/aizLGBLF1_k)
+
 ## Installation
 
 - Fork the project
